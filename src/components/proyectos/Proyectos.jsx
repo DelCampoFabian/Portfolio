@@ -6,8 +6,6 @@ import { ListaProductos } from '../../lista-proyectos/ListaProyectos'
 
 const Proyectos = () => {
     const [proyectos, setProyectos] = useState([])
-
-
     useEffect(() => {
         const getProyectos = new Promise((resolve) => {
             resolve(ListaProductos)
@@ -38,8 +36,6 @@ const Proyectos = () => {
                     })
                 }
             </div>
-
-
         </main>
     )
 }

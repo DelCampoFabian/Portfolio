@@ -36,7 +36,7 @@ if (about){
                 <div className='skills__media-container'>
                     <div className='aboutMe__container'>
                         <h3 className='aboutMe__titulo'>Sobre <span className='aboutMe__titulo-span'>Mi</span></h3>
-                        <p className='aboutMe__descripcion'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio harum suscipit consectetur quo blanditiis assumenda labore distinctio atque voluptas illo, enim quae qui vitae quos esse ullam, eum consequuntur eius?</p>
+                        <p className='aboutMe__descripcion'>Me llamo Fabián, tengo 24 años y resido en Rio Gallegos, Santa Cruz. Empecé a estudiar programación en marzo del 2022 con el objetivo de convertirme en Desarrollador Fullstack. Actualmente me encuentro poniendo a prueba todo lo aprendido en programación Frontend y cursando Backend. Mis hobbies son ir al gimnasio, escuchar música y jugar videojuegos.</p>
                     </div>
                     <div className='aboutMe__container'>
                         <h3 className='aboutMe__titulo'>Mis <span className='aboutMe__titulo-span'>habilidades</span></h3>
@@ -77,7 +77,7 @@ if (about){
                 <h4 className='nombre__profesion'>Frontend developer</h4>
             </div>
             <div className='descripcion__container'>
-                <p className='descripcion__parrafo'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quos doloribus rerum quidem fugit assumenda error? Porro dolore excepturi provident, iure culpa, odit cum eum sint sunt nobis doloremque eaque.</p>
+                <p className='descripcion__parrafo'>Soy estudiante de programación Fullstack. Actualmente termine programación Frontend y comencé con programación Backend. Estoy en la búsqueda de nuevos desafíos como desarrollador Frontend que me ayuden a crecer como profesional y personalmente.</p>
                 <button onClick={() => {
                     handleHeader();
                     handleViews();

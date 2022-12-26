@@ -2,6 +2,8 @@ import React from 'react'
 import { BsTelephoneFill, BsLinkedin , BsGithub} from "react-icons/bs"
 import { GrMail } from "react-icons/gr"
 import emailjs from "@emailjs/browser"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Contacto = () => {
@@ -10,7 +12,20 @@ const Contacto = () => {
         emailjs.sendForm("service_rikfk2k","template_ex9nrfr",event.target,"i0qLKdC66I2-znkDj")
         .then((response)=> console.log(response))
         .catch((error)=> console.log(error))
+      
         
+    }
+    const mostrarAlerta = () => {
+        toast.success('Mensaje enviado', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            });
     }
 
     return (
@@ -29,7 +44,8 @@ const Contacto = () => {
                     <input className='contacto__form-input' type="text" name='user_name' required="required" placeholder='Nombre'/>
                     <input className='contacto__form-input' type="email" name='user_email' required="required" placeholder='Email'/>
                     <textarea className='contacto__form-textarea' name='user_mensaje' placeholder='Mensaje'></textarea>
-                    <button className='contacto__form-button' type='submit'>Enviar mensaje</button>
+                    <button onClick={()=>mostrarAlerta()} className='contacto__form-button' type='submit'>Enviar mensaje</button>
+                    <ToastContainer />
                 </form>
             </div>
            
