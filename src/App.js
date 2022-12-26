@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Header from './components/header/Header';
+import Inicio from './components/main/Inicio';
+import SobreMi from './components/sobreMi/SobreMi';
+import Proyectos from './components/proyectos/Proyectos';
+import Contacto from './components/contacto/Contacto';
+import { useState } from 'react';
 
 function App() {
+  const [header, setHeader] = useState(false)
+
+  const handleHeader = () => setHeader(!header)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+    <Header header={header}/>
+    <Routes>
+      <Route path='/' element={<Inicio/>}/>
+      <Route path='/sobreMi' element={<SobreMi handleHeader={handleHeader}/>}/>
+      <Route path='/proyectos' element={<Proyectos/>}/>
+      <Route path='/contacto' element={<Contacto/>}/>
+    </Routes>
+    
+    </BrowserRouter>
+    </>
   );
 }
 
