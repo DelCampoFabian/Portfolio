@@ -14,10 +14,10 @@ const Header = ({header}) => {
         <nav className={`navegacion ${header ? "cerrar__bars" : ""}`}>
             <h3 className='navegacion__titulo'><img src={logoPersonal} alt="" /></h3>
             <ul className={`navegacion__ul ${menu ? 'ul__active' : ''}`}>
-                <li className='navegacion__ul-li'><NavLink onClick={handleMenu} to="/" >Inicio</NavLink></li>
-                <li className='navegacion__ul-li'><NavLink onClick={handleMenu} to="/sobreMi">Sobre mi</NavLink></li>
-                <li className='navegacion__ul-li'><NavLink onClick={handleMenu} to="/proyectos">Proyectos</NavLink></li>
-                <li className='navegacion__ul-li'><NavLink onClick={handleMenu} to="/contacto">Contacto</NavLink></li>
+                <li className='navegacion__ul-li'><NavLink onClick={handleMenu} to="/Portfolio" >Inicio</NavLink></li>
+                <li className='navegacion__ul-li'><NavLink onClick={handleMenu} to="/Portfolio/sobreMi">Sobre mi</NavLink></li>
+                <li className='navegacion__ul-li'><NavLink onClick={handleMenu} to="/Portfolio/proyectos">Proyectos</NavLink></li>
+                <li className='navegacion__ul-li'><NavLink onClick={handleMenu} to="/Portfolio/contacto">Contacto</NavLink></li>
             </ul>
             <div onClick={handleMenu} className={`navegacion__bars ${menu ? "cerrar__bars" : ""}`}>
                 <i><FaBars/></i>
