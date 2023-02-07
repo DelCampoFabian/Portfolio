@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dd28a455.css",
+    "main.js": "/static/js/main.f6e05e12.js",
+    "static/media/proyectoRJS.png": "/static/media/proyectoRJS.4337e917cd8d63080929.png",
+    "static/media/proyectoJS.png": "/static/media/proyectoJS.acdd9e4be6b42d70cbcf.png",
+    "static/media/fotoPerfil.jpg": "/static/media/fotoPerfil.f7f743d58f70fe17efcc.jpg",
+    "static/media/CV-Fabian-Del-Campo.pdf": "/static/media/CV-Fabian-Del-Campo.d423c2cc66a5386b6145.pdf",
+    "static/media/logoPersonal.png": "/static/media/logoPersonal.d5a405bdbc81c2cbe7a8.png",
+    "static/media/proyectoDW.jpg": "/static/media/proyectoDW.5a3c15a93e9e804e8126.jpg",
+    "index.html": "/index.html",
+    "main.dd28a455.css.map": "/static/css/main.dd28a455.css.map",
+    "main.f6e05e12.js.map": "/static/js/main.f6e05e12.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd28a455.css",
+    "static/js/main.f6e05e12.js"
+  ]
+}
