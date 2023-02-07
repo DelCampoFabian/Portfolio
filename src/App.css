@@ -25,15 +25,15 @@ body {
 }
 
 .navegacion__titulo {
-    font-size: 32px;
-    line-height: 60px;
-    color: #fff;
-    letter-spacing: 1px;
-    font-weight: 600;
     margin-left: 16px;
+    margin-top: 8px;
 
 }
-
+.navegacion__titulo img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
 .navegacion__ul {
     width: 50%;
     height: 100%;
@@ -996,7 +996,6 @@ body {
     }
     .about__cv {
         text-decoration: none;
-        
         text-align: center;
         margin: 32px auto;
         padding: 8px 48px;
